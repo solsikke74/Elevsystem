@@ -54,6 +54,23 @@ body {
   color: var(--text-primary, var(--prussian-blue));
 }
 
-button{
-    padding:10px;
+button {
+  padding: 10px 18px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--btn-primary-hover);
+}
+
+button:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
 }
