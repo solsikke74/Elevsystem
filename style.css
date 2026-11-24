@@ -54,6 +54,29 @@ body {
   color: var(--text-primary, var(--prussian-blue));
 }
 
+h1, h2, h3 {
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Valgfri klasse for datoer, bildetekster og undertekst */
+.text-muted {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
 button {
   padding: 10px 18px;
   font-family: inherit;
