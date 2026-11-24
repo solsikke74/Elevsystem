@@ -47,6 +47,8 @@ body{
     font-family: Arial, sans-serif;
     max-width: 800px;
     margin:auto;
+    background-colour: var(--warm-white);
+    colour: var(--prussian-blue);
 }
 
 button{
