@@ -43,12 +43,15 @@
   --focus-ring:        var(--cerulean);      /* Tydelig ramme når brukeren tabber med tastatur */
 }
 
-body{
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin:auto;
-    background-color: var(--warm-white);
-    color: var(--prussian-blue);
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+  background-color: var(--bg-page, var(--warm-white));
+  color: var(--text-primary, var(--prussian-blue));
 }
 
 button{
