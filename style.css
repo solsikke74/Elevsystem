@@ -1,3 +1,48 @@
+:root {
+  /* =========================================================
+     1. RÅPALETT (Selvvalgte grunnfarger)
+     ========================================================= */
+  --prussian-blue: #0a1128; /* Mørkest: brukes til hovedtekst og evt. dyp mørk bakgrunn */
+  --deep-navy:     #001f54; /* Mørk flate: brukes til header, footer og fremhevede mørke seksjoner */
+  --yale-blue:     #034078; /* Mellommørk: brukes til hover-effekter, sekundærknapper og ikoner */
+  --cerulean:      #1282a2; /* Aksent (10 %): brukes til viktige knapper (CTA) og aktive elementer */
+  --warm-white:    #fefcfb; /* Lysest (60 %): hovedbakgrunn på siden og lys tekst på mørk flate */
+
+  /* =========================================================
+     2. STØTTENYANSER (Gir luft, dybde og lesbarhet)
+     ========================================================= */
+  --ice-surface:   #f2f6fa; /* Svak blågrå tint: skiller kort og bokser fra den hvite bakgrunnen */
+  --border-subtle: #d6e1ec; /* Tynn ramme: brukes til skillelinjer, tabeller og input-felt */
+  --muted-navy:    #3b4a66; /* Dempet blågrå: brukes til bildetekst, datoer og hjelpetekst */
+
+  /* =========================================================
+     3. SEMANTISKE ROLLER (Bruk helst disse i selve CSS-en)
+     ========================================================= */
+
+  /* --- Bakgrunner (ca. 60 % lys flate + 30 % mørke/sekundære flater) --- */
+  --bg-page:         var(--warm-white);  /* body / hovedbakgrunn på hele nettsiden */
+  --bg-surface:      var(--ice-surface); /* Kort (cards), infobokser, tabellrader og input-felt */
+  --bg-section-dark: var(--deep-navy);   /* Toppmeny (navbar), hero-banner og footer */
+
+  /* --- Tekst (alltid høy kontrast mot bakgrunnen) --- */
+  --text-primary:    var(--prussian-blue); /* Hovedoverskrifter (H1–H3) og vanlig brødtekst */
+  --text-secondary:  var(--muted-navy);    /* Ingresser, datoer, etiketter og mindre viktig tekst */
+  --text-on-dark:    var(--warm-white);    /* All tekst og ikoner som ligger oppå --bg-section-dark */
+
+  /* --- Knapper og interaksjon (ca. 10 % blikkfang) --- */
+  --btn-primary-bg:    var(--cerulean);    /* Hovedknapp ("Kjøp", "Kontakt oss", "Send inn") */
+  --btn-primary-hover: var(--yale-blue);   /* Hovedknapp når musepekeren holdes over */
+  --btn-primary-text:  var(--warm-white);  /* Tekst inni hovedknappen (bruk fet skrift: 600/700) */
+
+  --btn-secondary-bg:  var(--yale-blue);   /* Sekundærknapp ("Les mer", "Avbryt") eller badge-merker */
+  --link-color:        var(--yale-blue);   /* Vanlige tekstlenker i brødtekst (god lesbarhet) */
+  --link-hover:        var(--cerulean);    /* Tekstlenker ved hover */
+
+  /* --- Rammer og detaljer --- */
+  --border-color:      var(--border-subtle); /* Kantlinjer rundt kort, skjemaer og mellom seksjoner */
+  --focus-ring:        var(--cerulean);      /* Tydelig ramme når brukeren tabber med tastatur */
+}
+
 body{
     font-family: Arial, sans-serif;
     max-width: 800px;
